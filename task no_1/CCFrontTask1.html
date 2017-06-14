@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='description' content="Task no.1" />
+  <meta name="keywords" content="hire, the best candidate, Damian Nowakowski, to receive the biggest profits, and to start, incredible adventure" />
+  <title>Task 1</title>
+  <style media="screen">
+    .container {
+      margin: 45vh auto;
+      width: 200px;
+      height: 15px;
+      color: black;
+      font-family: sans-serif;
+      cursor: default;
+    }
+
+    .container__text {
+      height: 100%;
+      text-align: center;
+    }
+
+    .container__text__span {
+      width: 43px;
+      height: 15px;
+      display: inline-block;
+      color: inherit;
+      border-bottom: dotted;
+      border-color: #FF5722;
+      cursor: url('http://www.rw-designer.com/cursor-extern.php?id=83760'), auto;
+    }
+
+    .container__tooltip {
+      width: 250px;
+      height: 40px;
+      background-color: #FF5722;
+      border-radius: 5px;
+      position: relative;
+      top: -75px;
+      left: -106px;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s;
+    }
+
+    .container__tooltip::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -13px;
+      border-left: 13px solid transparent;
+      border-right: 13px solid transparent;
+      border-top: 15px solid #FF5722;
+    }
+
+    .container__tooltip_text {
+      width: 100%;
+      height: 50%;
+      color: white;
+      position: absolute;
+      top: -5px;
+      padding-left: 8px;
+      text-align: left;
+    }
+
+    .container__text__span:hover .container__tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="container__text">
+      This is an awesome
+      <span class="container__text__span">
+        tooltip
+        <div class="container__tooltip">
+          <p class="container__tooltip_text">
+            It's so cool
+          </p>
+        </div>
+      </span>
+    </div>
+  </div>
+
+</body>
+
+</html>
