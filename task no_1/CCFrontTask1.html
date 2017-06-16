@@ -4,11 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name='description' content="Task no.1" />
-  <meta name="keywords" content="hire, the best candidate, Damian Nowakowski, to receive the biggest profits, and to start, incredible adventure" />
+  <meta name="keywords" content="hire the best candidate, Damian Nowakowski, Receive the biggest profits, and start an incredible adventure" />
   <title>Task 1</title>
   <style media="screen">
     .container {
-      margin: 45vh auto;
+      position: relative;
+      top: 45vh;
+      left: 44vw;
       width: 200px;
       height: 15px;
       color: black;
@@ -18,13 +20,11 @@
 
     .container__text {
       height: 100%;
-      text-align: center;
     }
 
     .container__text__span {
       width: 43px;
       height: 15px;
-      display: inline-block;
       color: inherit;
       border-bottom: dotted;
       border-color: #FF5722;
@@ -36,12 +36,13 @@
       height: 40px;
       background-color: #FF5722;
       border-radius: 5px;
-      position: relative;
-      top: -75px;
-      left: -106px;
-      visibility: hidden;
+      position: absolute;
+      top: -55px;
+      left: 39px;
+      visibility: visible;
       opacity: 0;
       transition: all 1s;
+      color: white;
     }
 
     .container__tooltip::after {
@@ -60,7 +61,7 @@
       height: 50%;
       color: white;
       position: absolute;
-      top: -5px;
+      top: 10px;
       padding-left: 8px;
       text-align: left;
     }
@@ -80,9 +81,9 @@
       <span class="container__text__span">
         tooltip
         <div class="container__tooltip">
-          <p class="container__tooltip_text">
+          <div class="container__tooltip_text">
             It's so cool
-          </p>
+          </div>
         </div>
       </span>
     </div>
