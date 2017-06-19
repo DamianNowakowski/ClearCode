@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='description' content="Task no.2" />
+  <meta name="keywords" content="hire, the best candidate, Damian Nowakowski, to receive the biggest profits, and to start, incredible adventure" />
+  <title>Task 2</title>
+  <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Pangolin');
+
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Pangolin', cursive;
+    }
+    body {
+      background: rgb(238,238,238);
+      background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(238,238,238,1) 100%);
+      background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(238,238,238,1) 100%);
+      background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(238,238,238,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 );
+    }
+    form {
+      margin: 0 auto;
+      margin-top: 20vh;
+      width: 400px;
+      height: 300px;
+      border: none;
+      //border-radius: 15px;
+      padding: 10px;
+      background-color: white;
+      -webkit-box-shadow: 5px 6px 47px 18px rgba(187,187,187,1);
+      -moz-box-shadow: 5px 6px 47px 18px rgba(187,187,187,1);
+      box-shadow: 5px 6px 47px 18px rgba(187,187,187,1);
+    }
+    .textInput {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      padding: 10px;
+      display: block;
+      width: 350px;
+      height: 60px;
+      line-height: 60px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: 1px solid grey;
+      resize: none;
+      background-color: #efefef;
+      font-size: 20px;
+      text-align: center;
+      outline: none;
+    }
+    .button {
+      margin: 30px auto;
+      display: block;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #36b03c;
+      color: white;
+      cursor: pointer;
+      letter-spacing: 2px;
+      outline: none;
+    }
+    .button:focus {
+      -webkit-box-shadow: 0px 0px 15px 2px rgba(204,204,204,.9);
+      -moz-box-shadow: 0px 0px 15px 2px rgba(204,204,204,.9);
+      box-shadow: 0px 0px 15px 2px rgba(204,204,204,.9);
+      background-color: rgba(54,176,60,0.9)
+    }
+    p {
+      width: 200px;
+      height: 20px;
+      text-align: center;
+      display: block;
+      margin: 0 auto 10px auto;
+      padding: 10px;
+      font-size: 17px;
+    }
+    .score {
+      display: block;
+      width: 50px;
+      height: 30px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<form action="">
+  <textarea class="textInput" type="message" name="nameOfSpell" placeholder="Type your spell" onfocus="this.placeholder=''" onblur="this.placeholder='Type your spell'" onkeyup="lettersOnly(this)"></textarea>
+  <input class="button" type="submit" name="" value="CHECK THE POWER OF SPELL">
+  <p>Power of your spell is equal:</p>
+  <span class="score"></span>
+</form>
+
+</body>
+  <script src="solution_with_HTML_file.js" type="text/javascript"></script>
+</html>
